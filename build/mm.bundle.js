@@ -51896,7 +51896,7 @@ angular.module('mm.core')
     "demo_sites": {},
     "gcmpn": "694767596569",
     "customurlscheme": "lmsmobile",
-    "siteurl": "https://www.gradez.in",
+    "siteurl": "https://lms.gradez.in",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://www.gradez.in/privacy"
