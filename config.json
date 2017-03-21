@@ -1,6 +1,6 @@
 {
     "app_id" : "com.gradez.lmsmobile",
-    "appname": "gradez Mobile",
+    "appname": "Gradez Mobile",
     "versioncode" : "2017",
     "versionname" : "1.0",
     "cache_expiration_time" : 300000,
@@ -11,8 +11,8 @@
     "demo_sites": {},
     "gcmpn": "694767596569",
     "customurlscheme": "lmsmobile",
-    "siteurl": "https://lms.gradez.in",
+    "siteurl": "https://www.gradez.in",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
-    "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
+    "privacypolicy": "https://www.gradez.in/privacy"
 }

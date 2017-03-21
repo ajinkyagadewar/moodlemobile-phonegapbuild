@@ -4744,13 +4744,13 @@ angular.module('mm.core')
                     return deprecatedFunctions[method];
                 } else {
                     $log.warn("You are using deprecated Web Services. " +
-                        "Your remote site seems to be outdated, consider upgrade it to the latest Moodle version.");
+                        "Your remote site seems to be outdated, consider upgrade it to the latest version.");
                 }
             } else if (!this.wsAvailable(method)) {
                 for (var oldFunc in deprecatedFunctions) {
                     if (deprecatedFunctions[oldFunc] === method && this.wsAvailable(oldFunc)) {
                         $log.warn("Your remote site doesn't support the function " + method +
-                            ", it seems to be outdated, consider upgrade it to the latest Moodle version.");
+                            ", it seems to be outdated, consider upgrade it to the latest version.");
                         return oldFunc;
                     }
                 }
@@ -5128,7 +5128,7 @@ angular.module('mm.core')
             return false;
         }
         var minVersion = 2012120300,
-            minRelease = "2.4";
+            minRelease = "1.0";
         if (infos.version) {
             var version = parseInt(infos.version);
             if (!isNaN(version)) {
@@ -6680,11 +6680,11 @@ angular.module('mm.core')
         };
                 self.getDocsUrl = function(release, page) {
             page = page || 'Mobile_app';
-            var docsurl = 'https://docs.moodle.org/en/' + page;
+            var docsurl = 'https://docs.gradez.in/en/' + page;
             if (typeof release != 'undefined') {
                 var version = release.substr(0, 3).replace(".", "");
                 if (parseInt(version) >= 24) {
-                    docsurl = docsurl.replace('https://docs.moodle.org/', 'https://docs.moodle.org/' + version + '/');
+                    docsurl = docsurl.replace('https://docs.gradez.in/', 'https://docs.gradez.in/' + version + '/');
                 }
             }
             return $mmLang.getCurrentLanguage().then(function(lang) {
@@ -51884,21 +51884,21 @@ angular.module('mm.addons.messageoutput_airnotifier')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
+    "app_id" : "com.gradez.lmsmobile",
+    "appname": "Gradez Mobile",
     "versioncode" : "2017",
-    "versionname" : "3.2.1",
+    "versionname" : "1.0",
     "cache_expiration_time" : 300000,
     "default_lang" : "en",
     "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "da": "Dansk", "de": "Deutsch","en": "English", "es": "Español", "es-mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "pl": "Polski", "pt-br": "Português - Brasil", "pt": "Português - Portugal", "ro": "Română", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh-cn" : "简体中文", "zh-tw" : "正體中文"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
-    "demo_sites": {"student": {"url": "http://school.demo.moodle.net", "username": "student", "password": "moodle"}, "teacher": {"url": "http://school.demo.moodle.net", "username": "teacher", "password": "moodle"}, "cva": {"url": "http://mm.cvaconsulting.com/moodle", "username": "student", "password": "student"}},
+    "demo_sites": {},
     "gcmpn": "694767596569",
-    "customurlscheme": "moodlemobile",
-    "siteurl": "",
+    "customurlscheme": "lmsmobile",
+    "siteurl": "https://www.gradez.in",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
-    "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
+    "privacypolicy": "https://www.gradez.in/privacy"
 }
 );

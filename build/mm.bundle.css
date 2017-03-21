@@ -10457,3 +10457,17 @@ select.mma-mod_survey-select {
 .mma-qtype-multianswer-container input[type="radio"], .mma-qtype-multianswer-container input[type="checkbox"] {
   margin-top: -4px;
   margin-right: 7px; }
+
+  .bar-header{
+    background-color: #39539C !important;
+  }
+
+   .bar-side-menu {
+    background-color: #39539C !important;
+   }
+
+   .bar-content{
+    background-color: #39539C !important;
+   }
+
+
