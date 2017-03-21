@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+resources/.DS_Store
+resources/android/.DS_Store
+resources/android/icon.png
+resources/android/icon/.DS_Store
+resources/ios/.DS_Store
+resources/ios/icon.png
